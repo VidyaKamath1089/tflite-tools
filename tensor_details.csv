@@ -1,0 +1,33 @@
+Id,Name,Shape,Size
+0,MobilenetV1/Logits/AvgPool_1a/AvgPool,1 1 1 1024,1024
+1,MobilenetV1/Logits/Conv2d_1c_1x1/BiasAdd,1 1 1 1001,1001
+4,MobilenetV1/Logits/SpatialSqueeze,1 1001,1001
+7,MobilenetV1/MobilenetV1/Conv2d_0/Relu6,1 112 112 32,401408
+9,MobilenetV1/MobilenetV1/Conv2d_10_depthwise/Relu6,1 14 14 512,100352
+13,MobilenetV1/MobilenetV1/Conv2d_10_pointwise/Relu6,1 14 14 512,100352
+15,MobilenetV1/MobilenetV1/Conv2d_11_depthwise/Relu6,1 14 14 512,100352
+19,MobilenetV1/MobilenetV1/Conv2d_11_pointwise/Relu6,1 14 14 512,100352
+21,MobilenetV1/MobilenetV1/Conv2d_12_depthwise/Relu6,1 7 7 512,25088
+25,MobilenetV1/MobilenetV1/Conv2d_12_pointwise/Relu6,1 7 7 1024,50176
+27,MobilenetV1/MobilenetV1/Conv2d_13_depthwise/Relu6,1 7 7 1024,50176
+31,MobilenetV1/MobilenetV1/Conv2d_13_pointwise/Relu6,1 7 7 1024,50176
+33,MobilenetV1/MobilenetV1/Conv2d_1_depthwise/Relu6,1 112 112 32,401408
+37,MobilenetV1/MobilenetV1/Conv2d_1_pointwise/Relu6,1 112 112 64,802816
+39,MobilenetV1/MobilenetV1/Conv2d_2_depthwise/Relu6,1 56 56 64,200704
+43,MobilenetV1/MobilenetV1/Conv2d_2_pointwise/Relu6,1 56 56 128,401408
+45,MobilenetV1/MobilenetV1/Conv2d_3_depthwise/Relu6,1 56 56 128,401408
+49,MobilenetV1/MobilenetV1/Conv2d_3_pointwise/Relu6,1 56 56 128,401408
+51,MobilenetV1/MobilenetV1/Conv2d_4_depthwise/Relu6,1 28 28 128,100352
+55,MobilenetV1/MobilenetV1/Conv2d_4_pointwise/Relu6,1 28 28 256,200704
+57,MobilenetV1/MobilenetV1/Conv2d_5_depthwise/Relu6,1 28 28 256,200704
+61,MobilenetV1/MobilenetV1/Conv2d_5_pointwise/Relu6,1 28 28 256,200704
+63,MobilenetV1/MobilenetV1/Conv2d_6_depthwise/Relu6,1 14 14 256,50176
+67,MobilenetV1/MobilenetV1/Conv2d_6_pointwise/Relu6,1 14 14 512,100352
+69,MobilenetV1/MobilenetV1/Conv2d_7_depthwise/Relu6,1 14 14 512,100352
+73,MobilenetV1/MobilenetV1/Conv2d_7_pointwise/Relu6,1 14 14 512,100352
+75,MobilenetV1/MobilenetV1/Conv2d_8_depthwise/Relu6,1 14 14 512,100352
+79,MobilenetV1/MobilenetV1/Conv2d_8_pointwise/Relu6,1 14 14 512,100352
+81,MobilenetV1/MobilenetV1/Conv2d_9_depthwise/Relu6,1 14 14 512,100352
+85,MobilenetV1/MobilenetV1/Conv2d_9_pointwise/Relu6,1 14 14 512,100352
+87,MobilenetV1/Predictions/Reshape_1,1 1001,1001
+88,input,1 224 224 3,150528
