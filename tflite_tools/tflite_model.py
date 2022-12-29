@@ -59,6 +59,10 @@ class TFLiteTensor:
         self.id = id
         self.shape = shape
         self.name = name
+        var=os.path.split(self.name)
+        var1=os.path.split(var[0])
+        #print(var1[1])
+        self.name=var1[1]
         self.is_constant = is_constant
         self.producer = producer
         self.consumers = consumers if consumers is not None else []
@@ -430,9 +434,9 @@ class TFLiteModel:
         ax = fig.gca()
         x = np.arange(0, len(labels))
 
-        ax.bar(x, input_sizes, color="#D95319", label="Operator inputs")
-        ax.bar(x, output_sizes, bottom=input_sizes, color="#EDB120", label="Operator outputs")
-        ax.bar(x, other_sizes, bottom=(input_sizes + output_sizes), color="#0072BD", label="Other tensors")
+        ax.bar(x, input_sizes, color="#041375", label="Operator inputs")
+        ax.bar(x, output_sizes, bottom=input_sizes, color="#0091E6", label="Operator outputs")
+        ax.bar(x, other_sizes, bottom=(input_sizes + output_sizes), color="#808080", label="Other tensors")
 
         ax.set_xticks(x)
         ax.set_xlabel('Operators')
