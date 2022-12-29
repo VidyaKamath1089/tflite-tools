@@ -2,6 +2,7 @@ import sys
 import csv
 from collections import namedtuple
 import functools
+import os
 from pathlib import Path
 
 from .tflite import Model
